@@ -10,5 +10,127 @@
     <script src="script.js" defer></script>
     <title>Wildlife</title>
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <div class="wrapper header__wrapper">
+        <div class="header__logo">Wildlife</div>
+        <nav class="header__navigation">
+          <ul>
+            <li class="navigation__link"><a href="#">Blog</a></li>
+            <li class="navigation__link"><a href="#">Contact</a></li>
+            <li class="navigation__link"><a href="#">🔍</a></li>
+            <li class="navigation__link"><a href="#">Sign in</a></li>
+          </ul>
+        </nav>
+        <img
+          src="./assets/img/backgound/bg-promo.jpg"
+          class="header__image"
+          alt="bg-promo"
+        />
+      </div>
+    </header>
+
+    <section class="promo">
+      <div class="wrapper promo__wrapper">
+        <div class="promo__content">
+          <h1 class="promo__title">Survival</h1>
+          <p class="promo__text">
+            What this means is that we exist to help protect our environment and
+            do in numbers of ways. You can save the planet by donation.
+          </p>
+          <button class="promo__button">Donate</button>
+        </div>
+      </div>
+    </section>
+
+    <main class="articles">
+      <div class="wrapper articles__wrapper">
+        <div class="articles__content">
+          <h2 class="articles__title">Latest articles</h2>
+          <p class="articles__text">Breaking news from the wild</p>
+        </div>
+        <div class="articles__slider">
+          <div class="articles__arrow">
+            <div class="arrow--left">🠔</div>
+            <div class="arrow--right">🠖</div>
+          </div>
+          <div class="articles__image">
+            <figure>
+              <div class="image--picture">
+                <img src="./assets/img/picture/deer.jpg" alt="" />
+              </div>
+              <figcaption>
+                <p class="image--title">Deer</p>
+                <span class="image--text">Naturalist investigation</span>
+              </figcaption>
+            </figure>
+            <figure>
+              <div class="image--picture">
+                <img src="./assets/img/picture/squirrel.jpg" alt="" />
+              </div>
+              <figcaption>
+                <p class="image--title">Squirrel</p>
+                <span class="image--text">Kamikaze squirrels</span>
+              </figcaption>
+            </figure>
+            <figure>
+              <div class="image--picture">
+                <img src="./assets/img/picture/bird.jpg" alt="" />
+              </div>
+              <figcaption>
+                <p class="image--title">Bird</p>
+                <span class="image--text">Birds Fight club</span>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="articles__news">
+          <h3 class="articles__title">
+            Get notified about new amazing articles
+          </h3>
+          <div class="articles__form">
+            <form action="#">
+              <input
+                type="text"
+                class="form--area"
+                placeholder="Email"
+                required
+              />
+              <input
+                type="submit"
+                class="form--submit"
+                placeholder="Send"
+                readonly
+              />
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="wrapper footer__wrapper">
+        <div class="footer__logo">Wildlife</div>
+        <div class="footer__info">
+          <ul>
+            <li class="info__link"><a href="#">Articles</a></li>
+            <li class="info__link"><a href="#">About us</a></li>
+            <li class="info__link"><a href="#">Learn more</a></li>
+          </ul>
+        </div>
+        <div class="footer__social">
+          <ul>
+            <li class="social__link"><a href="#"></a></li>
+            <li class="social__link"><a href="#"></a></li>
+            <li class="social__link"><a href="#"></a></li>
+          </ul>
+        </div>
+        <img
+          src="./assets/img/backgound/bg-footer.jpg"
+          class="footer"
+          alt="bg-footer"
+        />
+      </div>
+    </footer>
+  </body>
 </html>
