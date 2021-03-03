@@ -1,0 +1,18 @@
+.logo {
+  position: relative;
+  @extend %font-logo;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  &:before {
+    position: absolute;
+    top: 0;
+    left: -85px;
+    display: block;
+    width: 70px;
+    height: 60px;
+    content: '';
+    background: url('./assets/img/icon/logo.svg');
+    background-size: cover;
+  }
+}

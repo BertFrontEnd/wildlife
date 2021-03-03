@@ -2,8 +2,15 @@ body {
   font-family: 'Open Sans Regular', sans-serif;
 }
 
+.logo {
+  font-family: 'Roboto Regular', sans-serif;
+  font-size: 3.2rem;
+  line-height: 6rem;
+}
+
 html {
   font-size: 10px;
+  background-color: #cecece;
 }
 
 body {
@@ -16,8 +23,63 @@ h1 {
   line-height: 7.2rem;
 }
 
+.logo {
+  position: relative;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.logo:before {
+  position: absolute;
+  top: 0;
+  left: -85px;
+  display: block;
+  width: 70px;
+  height: 60px;
+  content: '';
+  background: url("./assets/img/icon/logo.svg");
+  background-size: cover;
+}
+
 .wrapper {
   max-width: 1440px;
   margin: 0 auto;
+}
+
+.header__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  padding: 20px 120px 20px 205px;
+}
+
+.header__navigation > * {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navigation__link {
+  margin-left: 60px;
+}
+
+.navigation__link a {
+  font-size: 2.3rem;
+  line-height: 6rem;
+  color: #ffffff;
+  text-decoration: none;
 }
 /*# sourceMappingURL=style.css.map */

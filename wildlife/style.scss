@@ -5,8 +5,10 @@
 
 //Base
 @import './assets/sass/base/base';
+@import './assets/sass/base/logo';
 
 //Layouts
 @import './assets/sass/layouts/wrapper';
 
 // Components
+@import './assets/sass/components/header';

@@ -3,9 +3,8 @@
   line-height: $height;
 }
 
-@mixin columns($center) {
+@mixin columns($justify-center, $align-center) {
   display: flex;
-  justify-content: $center;
-  align-items: $center;
-  flex-wrap: wrap;
-} ;
+  justify-content: $justify-center;
+  align-items: $align-center;
+}

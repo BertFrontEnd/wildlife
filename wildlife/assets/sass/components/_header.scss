@@ -1,0 +1,22 @@
+.header__wrapper {
+  @include columns($justify-center: space-between, $align-center: center);
+  width: 100%;
+  padding: 20px 120px 20px 205px;
+}
+
+.header__navigation {
+  > * {
+    @include columns($justify-center: flex-end, $align-center: center);
+  }
+}
+
+.navigation__link {
+  margin-left: 60px;
+
+  a {
+    font-size: 2.3rem;
+    line-height: 6rem;
+    color: #ffffff;
+    text-decoration: none;
+  }
+}
