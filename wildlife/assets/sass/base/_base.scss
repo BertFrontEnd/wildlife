@@ -1,0 +1,12 @@
+html {
+  font-size: 10px;
+}
+
+body {
+  @extend %font-primary;
+  @include font($size: 1.6rem, $height: normal);
+}
+
+h1 {
+  @include font($size: 4.8rem, $height: 7.2rem);
+}
