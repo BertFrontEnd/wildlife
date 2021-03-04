@@ -1,7 +1,12 @@
 .header__wrapper {
-  @include columns($justify-center: space-between, $align-center: center);
+  position: absolute;
+  top: 0;
+  left: 50%;
+  z-index: 9;
   width: 100%;
   padding: 20px 120px 20px 205px;
+  @include columns($justify-center: space-between, $align-center: center);
+  transform: translateX(-50%);
 }
 
 .header__navigation {
@@ -11,12 +16,32 @@
 }
 
 .navigation__link {
-  margin-left: 60px;
+  margin-left: 62px;
 
   a {
-    font-size: 2.3rem;
-    line-height: 6rem;
-    color: #ffffff;
+    @include font($size: 2.3rem, $height: 6rem);
+    color: $font-light;
+    white-space: nowrap;
     text-decoration: none;
+  }
+
+  .search {
+    position: relative;
+
+    &::before {
+      display: block;
+      width: 32px;
+      height: 32px;
+      content: '';
+      background: url('./assets/img/icon/search.svg');
+      background-size: cover;
+    }
+  }
+
+  .sign-in {
+    padding: 10px 23px 8px 24px;
+    @extend %font-sign-in;
+    border-radius: 5px;
+    border: 2px solid $orange-main;
   }
 }

@@ -1,0 +1,43 @@
+.promo__wrapper {
+  min-height: 780px;
+  width: 100%;
+  padding: 200px 120px;
+}
+
+.promo__title {
+  margin-bottom: 50px;
+}
+
+.promo__text {
+  width: 274px;
+  margin-bottom: 49px;
+  @include font($size: 1.8rem, $height: 2.7rem);
+  color: $font-light;
+}
+
+.promo__button {
+  width: 160px;
+  height: 60px;
+  padding-left: 4px;
+  padding-bottom: 6px;
+  @include font($size: 2.3rem, $height: normal);
+  letter-spacing: -1px;
+  color: $font-light;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  background-color: $orange-main;
+  cursor: pointer;
+}
+
+.promo__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
