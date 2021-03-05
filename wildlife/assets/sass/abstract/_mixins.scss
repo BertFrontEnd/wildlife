@@ -8,3 +8,8 @@
   justify-content: $justify-center;
   align-items: $align-center;
 }
+
+@mixin border-reset($color) {
+  outline: none;
+  border: 1px solid $color;
+}

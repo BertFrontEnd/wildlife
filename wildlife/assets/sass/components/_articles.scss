@@ -1,5 +1,5 @@
 .articles__wrapper {
-  min-height: 1368px;
+  /* min-height: 1368px; */
   width: 100%;
   padding: 120px 120px 240px;
 }
@@ -7,7 +7,7 @@
 .articles__content {
   @include columns($justify-center: center, $align-center: center);
   flex-direction: column;
-  margin-bottom: 120px;
+  margin-bottom: 119px;
 }
 
 .articles__title {
@@ -23,6 +23,7 @@
   position: relative;
   @include columns($justify-center: center, $align-center: center);
   width: 100%;
+  /* min-height: 360px; */
   margin-bottom: 240px;
 }
 
@@ -65,19 +66,79 @@
 }
 
 .articles__image {
-  @include columns($justify-center: center, $align-center: center);
+  @include columns($justify-center: space-between, $align-center: center);
 
   .image__picture {
+    position: relative;
     margin: 0 30px;
 
-    img {
-      position: relative;
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    .picture__container {
       width: 300px;
       height: 360px;
     }
   }
+}
 
-  .picture__content {
-    position: absolute;
+.picture__content {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  @include columns($justify-center: center, $align-center: center);
+  flex-direction: column;
+  white-space: nowrap;
+  transform: translateX(-50%);
+
+  .content__title {
+    margin-bottom: 10px;
+  }
+
+  .content__text {
+    @include font($size: 1.7rem, $height: 2.7rem);
+    font-weight: 100;
+    color: $font-light;
+  }
+}
+
+.articles__news {
+  @include columns($justify-center: space-between, $align-center: center);
+  flex-direction: column;
+
+  .news__title {
+    margin-bottom: 59px;
+  }
+
+  .news__form {
+    font-size: 0;
+    @extend %font-secondary;
+
+    .form--area {
+      padding: 16px 16px;
+      width: 540px;
+      @include font($size: 2.3rem, $height: normal);
+      color: $font-grey;
+      @include border-reset($color: $font-grey);
+      border-right: none;
+      background-color: $background-color;
+    }
+
+    .form--submit {
+      padding: 16px 34px;
+      margin-left: 0px;
+      @include font($size: 2.3rem, $height: normal);
+      color: $font-light;
+      @include border-reset($color: $orange-main);
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+      background-color: $orange-main;
+      cursor: pointer;
+    }
   }
 }

@@ -59,33 +59,52 @@
           </div>
           <div class="articles__image">
             <figure class="image__picture">
-              <img src="./assets/img/picture/deer.jpg" alt="" />
+              <div class="picture__container">
+                <img
+                  src="./assets/img/picture/deer.jpg"
+                  alt=""
+                  width="300"
+                  height="360"
+                />
+              </div>
               <figcaption class="picture__content">
-                <p class="content__title">Deer</p>
-                <span class="content__text">Naturalist investigation</span>
+                <h4 class="content__title">Deer</h4>
+                <p class="content__text">Naturalist investigation</p>
               </figcaption>
             </figure>
             <figure class="image__picture">
-              <img src="./assets/img/picture/squirrel.jpg" alt="" />
+              <div class="picture__container">
+                <img
+                  src="./assets/img/picture/squirrel.jpg"
+                  alt=""
+                  width="300"
+                  height="360"
+                />
+              </div>
               <figcaption class="picture__content">
-                <p class="content__title">Squirrel</p>
-                <span class="content__text">Kamikaze squirrels</span>
+                <h4 class="content__title">Squirrel</h4>
+                <p class="content__text">Kamikaze squirrels</p>
               </figcaption>
             </figure>
             <figure class="image__picture">
-              <img src="./assets/img/picture/bird.jpg" alt="" />
+              <div class="picture__container">
+                <img
+                  src="./assets/img/picture/bird.jpg"
+                  alt=""
+                  width="300"
+                  height="360"
+                />
+              </div>
               <figcaption class="picture__content">
-                <p class="content__title">Bird</p>
-                <span class="content__text">Birds Fight club</span>
+                <h4 class="content__title">Bird</h4>
+                <p class="content__text">Birds Fight club</p>
               </figcaption>
             </figure>
           </div>
         </div>
         <div class="articles__news">
-          <h3 class="articles__title">
-            Get notified about new amazing articles
-          </h3>
-          <div class="articles__form">
+          <h3 class="news__title">Get notified about new amazing articles</h3>
+          <div class="news__form">
             <form action="#">
               <input
                 type="text"
@@ -93,12 +112,7 @@
                 placeholder="Email"
                 required
               />
-              <input
-                type="submit"
-                class="form--submit"
-                placeholder="Send"
-                readonly
-              />
+              <input type="submit" class="form--submit" value="Send" readonly />
             </form>
           </div>
         </div>
@@ -122,11 +136,13 @@
             <li class="social__link"><a href="#"></a></li>
           </ul>
         </div>
-        <img
-          src="./assets/img/background/bg-footer.jpg"
-          class="footer"
-          alt="bg-footer"
-        />
+        <div class="footer__background">
+          <img
+            src="./assets/img/background/bg-footer.jpg"
+            class="footer"
+            alt="bg-footer"
+          />
+        </div>
       </div>
     </footer>
   </body>

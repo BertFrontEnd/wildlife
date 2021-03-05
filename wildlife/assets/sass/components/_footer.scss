@@ -1,0 +1,32 @@
+.footer__wrapper {
+  @include columns($justify-center: space-between, $align-center: center);
+  width: 100%;
+  padding: 150px 120px 148px;
+}
+
+.footer__info {
+  > * {
+    @include columns($justify-center: center, $align-center: center);
+  }
+
+  .info__link {
+    margin: 0 43px;
+
+    a {
+      @include font($size: 2.3rem, $height: 6rem);
+      @extend %link;
+    }
+  }
+}
+
+.footer__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
