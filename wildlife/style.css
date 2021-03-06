@@ -18,6 +18,18 @@ body {
   text-decoration: none;
 }
 
+.footer__social .social__link .facebook:before, .footer__social .social__link .instagram:before, .footer__social .social__link .pinterest:before, .footer__social .social__link .telegram:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 html {
   font-size: 10px;
   background-color: #cccccc;
@@ -407,10 +419,43 @@ h4 {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  padding: 150px 120px 148px;
+  padding: 150px 120px 148px 205px;
 }
 
 .footer__info > * {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__info .info__link {
+  margin: 0 43px;
+}
+
+.footer__info .info__link:nth-child(1) {
+  margin-right: 44px;
+}
+
+.footer__info .info__link:nth-child(2) {
+  margin-right: 46px;
+}
+
+.footer__info .info__link:nth-child(3) {
+  margin-right: 32px;
+}
+
+.footer__info .info__link a {
+  font-size: 2.3rem;
+  line-height: 6rem;
+}
+
+.footer__social > * {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -422,13 +467,39 @@ h4 {
           align-items: center;
 }
 
-.footer__info .info__link {
-  margin: 0 43px;
+.footer__social .social__link {
+  margin-left: 26px;
 }
 
-.footer__info .info__link a {
+.footer__social .social__link:first-child {
+  margin-left: 0;
+}
+
+.footer__social .social__link a {
+  position: relative;
+  display: block;
+  width: 40px;
+  height: 40px;
   font-size: 2.3rem;
   line-height: 6rem;
+  border-radius: 50%;
+  background-color: #f7f7f7;
+}
+
+.footer__social .social__link .facebook:before {
+  background-image: url("./assets/img/social/facebook.svg");
+}
+
+.footer__social .social__link .instagram:before {
+  background-image: url("./assets/img/social/instagram.svg");
+}
+
+.footer__social .social__link .pinterest:before {
+  background-image: url("./assets/img/social/pinterest.svg");
+}
+
+.footer__social .social__link .telegram:before {
+  background-image: url("./assets/img/social/telegram.svg");
 }
 
 .footer__background {

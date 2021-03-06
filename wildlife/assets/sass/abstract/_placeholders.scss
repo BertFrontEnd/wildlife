@@ -21,3 +21,15 @@
   white-space: nowrap;
   text-decoration: none;
 }
+
+%social {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
