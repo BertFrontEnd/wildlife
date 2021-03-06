@@ -27,6 +27,15 @@
     a {
       @include font($size: 2.3rem, $height: 6rem);
       @extend %link;
+      @extend %transition;
+
+      &:hover {
+        @extend %link-hover;
+      }
+
+      &:active {
+        @extend %link-active;
+      }
     }
   }
 }
@@ -51,12 +60,28 @@
       @include font($size: 2.3rem, $height: 6rem);
       border-radius: 50%;
       background-color: $font-light;
+      @extend %transition;
+
+      &:hover {
+        @extend %social-hover;
+      }
+
+      &:active {
+        @extend %social-active;
+      }
     }
 
     .facebook {
       &:before {
         @extend %social;
         background-image: url('./assets/img/social/facebook.svg');
+        @extend %transition;
+      }
+
+      &:hover {
+        &::before {
+          background-image: url('./assets/img/social/facebook-interactive.svg');
+        }
       }
     }
 
@@ -64,6 +89,13 @@
       &:before {
         @extend %social;
         background-image: url('./assets/img/social/instagram.svg');
+        @extend %transition;
+      }
+
+      &:hover {
+        &::before {
+          background-image: url('./assets/img/social/instagram-interactive.svg');
+        }
       }
     }
 
@@ -71,6 +103,13 @@
       &:before {
         @extend %social;
         background-image: url('./assets/img/social/pinterest.svg');
+        @extend %transition;
+      }
+
+      &:hover {
+        &::before {
+          background-image: url('./assets/img/social/pinterest-interactive.svg');
+        }
       }
     }
 
@@ -78,6 +117,13 @@
       &:before {
         @extend %social;
         background-image: url('./assets/img/social/telegram.svg');
+        @extend %transition;
+      }
+
+      &:hover {
+        &::before {
+          background-image: url('./assets/img/social/telegram-interactive.svg');
+        }
       }
     }
   }

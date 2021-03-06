@@ -33,3 +33,47 @@
   background-position: center;
   background-repeat: no-repeat;
 }
+
+%logo-hover {
+  color: $orange-light;
+}
+
+%logo-active {
+  color: $orange-dark;
+}
+
+%link-hover {
+  color: $orange-light;
+}
+
+%link-active {
+  color: $orange-dark;
+}
+
+%sign-in-hover {
+  color: $font-light;
+  background-color: $orange-main;
+}
+
+%sign-in-active {
+  border-color: $orange-dark;
+  background-color: $orange-dark;
+}
+
+%button-hover {
+  border-color: $orange-light;
+  background-color: $orange-light;
+}
+
+%button-active {
+  border-color: $orange-dark;
+  background-color: $orange-dark;
+}
+
+%social-hover {
+  background-color: $orange-light;
+}
+
+%social-active {
+  background-color: $orange-dark;
+}

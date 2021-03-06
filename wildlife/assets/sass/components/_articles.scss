@@ -36,6 +36,7 @@
 
   .arrow--left {
     position: relative;
+    cursor: pointer;
 
     &::before {
       display: block;
@@ -46,11 +47,25 @@
       background-size: contain;
       background-position: center;
       background-repeat: no-repeat;
+      @extend %transition;
+    }
+
+    &:hover {
+      &:before {
+        background: url('./assets/img/navigation/arrow-left-hover.svg');
+      }
+    }
+
+    &:active {
+      &:before {
+        background: url('./assets/img/navigation/arrow-left-active.svg');
+      }
     }
   }
 
   .arrow--right {
     position: relative;
+    cursor: pointer;
 
     &::before {
       display: block;
@@ -61,6 +76,19 @@
       background-size: contain;
       background-position: center;
       background-repeat: no-repeat;
+      @extend %transition;
+    }
+
+    &:hover {
+      &:before {
+        background: url('./assets/img/navigation/arrow-right-hover.svg');
+      }
+    }
+
+    &:active {
+      &:before {
+        background: url('./assets/img/navigation/arrow-right-active.svg');
+      }
     }
   }
 }
@@ -138,7 +166,16 @@
       border-top-right-radius: 5px;
       border-bottom-right-radius: 5px;
       background-color: $orange-main;
+      @extend %transition;
       cursor: pointer;
+
+      &:hover {
+        @extend %button-hover;
+      }
+
+      &:active {
+        @extend %button-active;
+      }
     }
   }
 }

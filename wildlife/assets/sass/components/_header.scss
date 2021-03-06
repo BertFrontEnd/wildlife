@@ -21,6 +21,15 @@
   a {
     @include font($size: 2.3rem, $height: 6rem);
     @extend %link;
+    @extend %transition;
+
+    &:hover {
+      @extend %link-hover;
+    }
+
+    &:active {
+      @extend %link-active;
+    }
   }
 
   .search {
@@ -33,6 +42,19 @@
       content: '';
       background: url('./assets/img/icon/search.svg');
       background-size: cover;
+      @extend %transition;
+    }
+
+    &:hover {
+      &:before {
+        background: url('./assets/img/icon/search-hover.svg');
+      }
+    }
+
+    &:active {
+      &:before {
+        background: url('./assets/img/icon/search-active.svg');
+      }
     }
   }
 
@@ -41,5 +63,13 @@
     @extend %font-secondary;
     border-radius: 5px;
     border: 2px solid $orange-main;
+
+    &:hover {
+      @extend %sign-in-hover;
+    }
+
+    &:active {
+      @extend %sign-in-active;
+    }
   }
 }

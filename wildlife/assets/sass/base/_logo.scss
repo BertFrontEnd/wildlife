@@ -2,7 +2,10 @@
   position: relative;
   @extend %font-logo;
   color: #ffffff;
+  text-decoration: none;
   text-transform: uppercase;
+  cursor: pointer;
+  @extend %transition;
 
   &:before {
     position: absolute;
@@ -14,5 +17,22 @@
     content: '';
     background: url('./assets/img/icon/logo.svg');
     background-size: cover;
+    @extend %transition;
+  }
+
+  &:hover {
+    @extend %logo-hover;
+
+    &:before {
+      background: url('./assets/img/icon/logo-hover.svg');
+    }
+  }
+
+  &:active {
+    @extend %logo-active;
+
+    &:before {
+      background: url('./assets/img/icon/logo-active.svg');
+    }
   }
 }

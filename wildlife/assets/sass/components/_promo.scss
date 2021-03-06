@@ -16,10 +16,11 @@
 }
 
 .promo__button {
-  width: 160px;
+  /* width: 160px;
   height: 60px;
   padding-left: 4px;
-  padding-bottom: 6px;
+  padding-bottom: 6px; */
+  padding: 12px 45px 16px 43px;
   @include font($size: 2.3rem, $height: normal);
   letter-spacing: -1px;
   color: $font-light;
@@ -27,7 +28,16 @@
   border: none;
   border-radius: 5px;
   background-color: $orange-main;
+  @extend %transition;
   cursor: pointer;
+
+  &:hover {
+    @extend %button-hover;
+  }
+
+  &:active {
+    @extend %button-active;
+  }
 }
 
 .promo__background {

@@ -1,3 +1,8 @@
+.logo, .logo:before, .navigation__link a, .navigation__link .search::before, .promo__button, .articles__arrow .arrow--left::before, .articles__arrow .arrow--right::before, .articles__news .news__form .form--submit, .footer__info .info__link a, .footer__social .social__link a, .footer__social .social__link .facebook:before, .footer__social .social__link .instagram:before, .footer__social .social__link .pinterest:before, .footer__social .social__link .telegram:before {
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
 body {
   font-family: 'Open Sans Regular', sans-serif;
 }
@@ -28,6 +33,50 @@ body {
   height: 40px;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.logo:hover {
+  color: #e39128;
+}
+
+.logo:active {
+  color: #8f5613;
+}
+
+.navigation__link a:hover, .footer__info .info__link a:hover {
+  color: #e39128;
+}
+
+.navigation__link a:active, .footer__info .info__link a:active {
+  color: #8f5613;
+}
+
+.navigation__link .sign-in:hover {
+  color: #f7f7f7;
+  background-color: #cd6326;
+}
+
+.navigation__link .sign-in:active {
+  border-color: #8f5613;
+  background-color: #8f5613;
+}
+
+.promo__button:hover, .articles__news .news__form .form--submit:hover {
+  border-color: #e39128;
+  background-color: #e39128;
+}
+
+.promo__button:active, .articles__news .news__form .form--submit:active {
+  border-color: #8f5613;
+  background-color: #8f5613;
+}
+
+.footer__social .social__link a:hover {
+  background-color: #e39128;
+}
+
+.footer__social .social__link a:active {
+  background-color: #8f5613;
 }
 
 html {
@@ -72,7 +121,9 @@ h4 {
 .logo {
   position: relative;
   color: #ffffff;
+  text-decoration: none;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .logo:before {
@@ -85,6 +136,14 @@ h4 {
   content: '';
   background: url("./assets/img/icon/logo.svg");
   background-size: cover;
+}
+
+.logo:hover:before {
+  background: url("./assets/img/icon/logo-hover.svg");
+}
+
+.logo:active:before {
+  background: url("./assets/img/icon/logo-active.svg");
 }
 
 .wrapper {
@@ -147,6 +206,14 @@ h4 {
   background-size: cover;
 }
 
+.navigation__link .search:hover:before {
+  background: url("./assets/img/icon/search-hover.svg");
+}
+
+.navigation__link .search:active:before {
+  background: url("./assets/img/icon/search-active.svg");
+}
+
 .navigation__link .sign-in {
   padding: 10px 23px 8px 24px;
   border-radius: 5px;
@@ -172,10 +239,11 @@ h4 {
 }
 
 .promo__button {
-  width: 160px;
+  /* width: 160px;
   height: 60px;
   padding-left: 4px;
-  padding-bottom: 6px;
+  padding-bottom: 6px; */
+  padding: 12px 45px 16px 43px;
   font-size: 2.3rem;
   line-height: normal;
   letter-spacing: -1px;
@@ -267,6 +335,7 @@ h4 {
 
 .articles__arrow .arrow--left {
   position: relative;
+  cursor: pointer;
 }
 
 .articles__arrow .arrow--left::before {
@@ -280,8 +349,17 @@ h4 {
   background-repeat: no-repeat;
 }
 
+.articles__arrow .arrow--left:hover:before {
+  background: url("./assets/img/navigation/arrow-left-hover.svg");
+}
+
+.articles__arrow .arrow--left:active:before {
+  background: url("./assets/img/navigation/arrow-left-active.svg");
+}
+
 .articles__arrow .arrow--right {
   position: relative;
+  cursor: pointer;
 }
 
 .articles__arrow .arrow--right::before {
@@ -293,6 +371,14 @@ h4 {
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.articles__arrow .arrow--right:hover:before {
+  background: url("./assets/img/navigation/arrow-right-hover.svg");
+}
+
+.articles__arrow .arrow--right:active:before {
+  background: url("./assets/img/navigation/arrow-right-active.svg");
 }
 
 .articles__image {
@@ -490,16 +576,32 @@ h4 {
   background-image: url("./assets/img/social/facebook.svg");
 }
 
+.footer__social .social__link .facebook:hover::before {
+  background-image: url("./assets/img/social/facebook-interactive.svg");
+}
+
 .footer__social .social__link .instagram:before {
   background-image: url("./assets/img/social/instagram.svg");
+}
+
+.footer__social .social__link .instagram:hover::before {
+  background-image: url("./assets/img/social/instagram-interactive.svg");
 }
 
 .footer__social .social__link .pinterest:before {
   background-image: url("./assets/img/social/pinterest.svg");
 }
 
+.footer__social .social__link .pinterest:hover::before {
+  background-image: url("./assets/img/social/pinterest-interactive.svg");
+}
+
 .footer__social .social__link .telegram:before {
   background-image: url("./assets/img/social/telegram.svg");
+}
+
+.footer__social .social__link .telegram:hover::before {
+  background-image: url("./assets/img/social/telegram-interactive.svg");
 }
 
 .footer__background {
