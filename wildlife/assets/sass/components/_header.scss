@@ -1,0 +1,75 @@
+.header__wrapper {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  z-index: 9;
+  width: 100%;
+  padding: 19px 120px 19px 205px;
+  @include columns($justify-center: space-between, $align-center: center);
+  transform: translateX(-50%);
+}
+
+.header__navigation {
+  > * {
+    @include columns($justify-center: flex-end, $align-center: center);
+  }
+}
+
+.navigation__link {
+  margin-left: 62px;
+
+  a {
+    @include font($size: 2.3rem, $height: 6rem);
+    @extend %link;
+    @extend %transition;
+
+    &:hover {
+      @extend %link-hover;
+    }
+
+    &:active {
+      @extend %link-active;
+    }
+  }
+
+  .search {
+    position: relative;
+
+    &::before {
+      display: block;
+      width: 32px;
+      height: 32px;
+      content: '';
+      background: url('./assets/img/icon/search.svg');
+      background-size: cover;
+      @extend %transition;
+    }
+
+    &:hover {
+      &:before {
+        background: url('./assets/img/icon/search-hover.svg');
+      }
+    }
+
+    &:active {
+      &:before {
+        background: url('./assets/img/icon/search-active.svg');
+      }
+    }
+  }
+
+  .sign-in {
+    padding: 9px 23px 9px 24px;
+    @extend %font-secondary;
+    border-radius: 5px;
+    border: 2px solid $orange-main;
+
+    &:hover {
+      @extend %sign-in-hover;
+    }
+
+    &:active {
+      @extend %sign-in-active;
+    }
+  }
+}

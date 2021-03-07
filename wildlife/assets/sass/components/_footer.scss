@@ -1,0 +1,149 @@
+.footer {
+  z-index: -1;
+  background-color: $background-footer;
+}
+
+.footer__wrapper {
+  z-index: 1;
+  @include columns($justify-center: space-between, $align-center: center);
+  width: 100%;
+  padding: 150px 120px 149px 205px;
+}
+
+.footer__info {
+  > * {
+    @include columns($justify-center: flex-end, $align-center: center);
+  }
+
+  .info__link {
+    margin: 0 43px;
+
+    &:nth-child(1) {
+      margin-right: 44px;
+    }
+
+    &:nth-child(2) {
+      margin-right: 46px;
+    }
+
+    &:nth-child(3) {
+      margin-right: 32px;
+    }
+
+    a {
+      @include font($size: 2.3rem, $height: 6rem);
+      @extend %link;
+      @extend %transition;
+
+      &:hover {
+        @extend %link-hover;
+      }
+
+      &:active {
+        @extend %link-active;
+      }
+    }
+  }
+}
+
+.footer__social {
+  > * {
+    @include columns($justify-center: center, $align-center: center);
+  }
+
+  .social__link {
+    margin-left: 26px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    a {
+      position: relative;
+      display: block;
+      width: 40px;
+      height: 40px;
+      @include font($size: 2.3rem, $height: 6rem);
+      border-radius: 50%;
+      background-color: $font-light;
+      @extend %transition;
+
+      &:hover {
+        @extend %social-hover;
+      }
+
+      &:active {
+        @extend %social-active;
+      }
+    }
+
+    .facebook {
+      &:before {
+        @extend %social;
+        background-image: url('./assets/img/social/facebook.svg');
+        @extend %transition;
+      }
+
+      &:hover {
+        &::before {
+          background-image: url('./assets/img/social/facebook-interactive.svg');
+        }
+      }
+    }
+
+    .instagram {
+      &:before {
+        @extend %social;
+        background-image: url('./assets/img/social/instagram.svg');
+        @extend %transition;
+      }
+
+      &:hover {
+        &::before {
+          background-image: url('./assets/img/social/instagram-interactive.svg');
+        }
+      }
+    }
+
+    .pinterest {
+      &:before {
+        @extend %social;
+        background-image: url('./assets/img/social/pinterest.svg');
+        @extend %transition;
+      }
+
+      &:hover {
+        &::before {
+          background-image: url('./assets/img/social/pinterest-interactive.svg');
+        }
+      }
+    }
+
+    .telegram {
+      &:before {
+        @extend %social;
+        background-image: url('./assets/img/social/telegram.svg');
+        @extend %transition;
+      }
+
+      &:hover {
+        &::before {
+          background-image: url('./assets/img/social/telegram-interactive.svg');
+        }
+      }
+    }
+  }
+}
+
+.footer__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+
+  img {
+    width: 100%;
+    height: 359px;
+    object-fit: cover;
+  }
+}

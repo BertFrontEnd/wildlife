@@ -1,0 +1,57 @@
+.promo {
+  z-index: -1;
+  background-color: $background-promo;
+}
+
+.promo__wrapper {
+  z-index: 1;
+  width: 100%;
+  padding: 200px 120px 240px;
+}
+
+.promo__content {
+  .content__title {
+    margin-bottom: 50px;
+  }
+
+  .content__text {
+    width: 274px;
+    margin-bottom: 49px;
+    @include font($size: 1.8rem, $height: 2.7rem);
+    color: $font-light;
+  }
+
+  .content__button {
+    padding: 12px 45px 16px 43px;
+    @include font($size: 2.3rem, $height: normal);
+    letter-spacing: -1px;
+    color: $font-light;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background-color: $orange-main;
+    @extend %transition;
+    cursor: pointer;
+
+    &:hover {
+      @extend %button-hover;
+    }
+
+    &:active {
+      @extend %button-active;
+    }
+  }
+}
+
+.promo__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+
+  img {
+    width: 100%;
+    height: 779px;
+    object-fit: cover;
+  }
+}
