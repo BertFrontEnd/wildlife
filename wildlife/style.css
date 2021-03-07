@@ -264,7 +264,9 @@ h4 {
 
 .promo__background img {
   width: 100%;
-  height: auto;
+  height: 779px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .articles {
@@ -621,6 +623,8 @@ h4 {
 
 .footer__background img {
   width: 100%;
-  height: auto;
+  height: 359px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 /*# sourceMappingURL=style.css.map */
