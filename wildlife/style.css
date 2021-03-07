@@ -158,7 +158,7 @@ h4 {
   left: 50%;
   z-index: 9;
   width: 100%;
-  padding: 20px 120px 20px 205px;
+  padding: 19px 120px 19px 205px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -215,7 +215,7 @@ h4 {
 }
 
 .navigation__link .sign-in {
-  padding: 10px 23px 8px 24px;
+  padding: 9px 23px 9px 24px;
   border-radius: 5px;
   border: 2px solid #cd6326;
 }
@@ -264,7 +264,7 @@ h4 {
 
 .articles__wrapper {
   width: 100%;
-  padding: 120px 120px 240px;
+  padding: 121px 120px 239px;
 }
 
 .articles__content {
@@ -475,7 +475,6 @@ h4 {
 
 .articles__news .news__form .form--submit {
   padding: 16px 34px;
-  margin-left: 0px;
   font-size: 2.3rem;
   line-height: normal;
   color: #f7f7f7;

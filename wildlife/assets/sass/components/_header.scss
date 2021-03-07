@@ -4,7 +4,7 @@
   left: 50%;
   z-index: 9;
   width: 100%;
-  padding: 20px 120px 20px 205px;
+  padding: 19px 120px 19px 205px;
   @include columns($justify-center: space-between, $align-center: center);
   transform: translateX(-50%);
 }
@@ -59,7 +59,7 @@
   }
 
   .sign-in {
-    padding: 10px 23px 8px 24px;
+    padding: 9px 23px 9px 24px;
     @extend %font-secondary;
     border-radius: 5px;
     border: 2px solid $orange-main;
