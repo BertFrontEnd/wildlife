@@ -1,3 +1,8 @@
+.articles {
+  z-index: -1;
+  background-color: $background-articles;
+}
+
 .articles__wrapper {
   width: 100%;
   padding: 121px 120px 239px;
@@ -152,7 +157,7 @@
       color: $font-grey;
       @include border-reset($color: $font-grey);
       border-right: none;
-      background-color: $background-color;
+      background-color: transparent;
     }
 
     .form--submit {

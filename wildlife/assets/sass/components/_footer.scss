@@ -1,7 +1,13 @@
+.footer {
+  z-index: -1;
+  background-color: $background-footer;
+}
+
 .footer__wrapper {
+  z-index: 1;
   @include columns($justify-center: space-between, $align-center: center);
   width: 100%;
-  padding: 150px 120px 148px 205px;
+  padding: 150px 120px 149px 205px;
 }
 
 .footer__info {
