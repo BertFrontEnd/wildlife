@@ -1,42 +1,39 @@
 .promo__wrapper {
-  min-height: 780px;
   width: 100%;
-  padding: 200px 120px;
+  padding: 200px 120px 240px;
 }
 
-.promo__title {
-  margin-bottom: 50px;
-}
-
-.promo__text {
-  width: 274px;
-  margin-bottom: 49px;
-  @include font($size: 1.8rem, $height: 2.7rem);
-  color: $font-light;
-}
-
-.promo__button {
-  /* width: 160px;
-  height: 60px;
-  padding-left: 4px;
-  padding-bottom: 6px; */
-  padding: 12px 45px 16px 43px;
-  @include font($size: 2.3rem, $height: normal);
-  letter-spacing: -1px;
-  color: $font-light;
-  outline: none;
-  border: none;
-  border-radius: 5px;
-  background-color: $orange-main;
-  @extend %transition;
-  cursor: pointer;
-
-  &:hover {
-    @extend %button-hover;
+.promo__content {
+  .content__title {
+    margin-bottom: 50px;
   }
 
-  &:active {
-    @extend %button-active;
+  .content__text {
+    width: 274px;
+    margin-bottom: 49px;
+    @include font($size: 1.8rem, $height: 2.7rem);
+    color: $font-light;
+  }
+
+  .content__button {
+    padding: 12px 45px 16px 43px;
+    @include font($size: 2.3rem, $height: normal);
+    letter-spacing: -1px;
+    color: $font-light;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background-color: $orange-main;
+    @extend %transition;
+    cursor: pointer;
+
+    &:hover {
+      @extend %button-hover;
+    }
+
+    &:active {
+      @extend %button-active;
+    }
   }
 }
 
